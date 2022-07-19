@@ -1,5 +1,6 @@
 body {
     background-image: url("lavendergif.gif");
+    background-repeat: no-repeat;
   }
 h1 {
     text-align: center;
