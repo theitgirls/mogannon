@@ -2,6 +2,14 @@ body {
     background-image: url("lavenderbackgroundgif.gif");
     background-repeat: no-repeat;
   }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
 h1 {
     text-align: center;
     color:#483d8b;
