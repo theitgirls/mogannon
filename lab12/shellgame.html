@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shell Game!</title>
+    <script>
+        function WinnerMessage () {
+            document.getElementById("messages").innerHTML = 'You found the turtle!';
+            document.getElementById('image')
+                    .style.display = "block";
+ 
+            document.getElementById('first')
+                    .style.display = "none";
+        }
+        function TryAgain () {
+            document.getElementById("messages").innerHTML = 'No turtle here... try again!';
+        }
+
+        function ShuffleShells() {
+            document.getElementById("first").style.order = Math.floor((Math.random() *3) +2);
+        }
+    </script>
+    <style>
+        .container {
+            display: flex;
+        }
+        #first {order: 1;}
+        #second {order: 2;}
+        #third {order: 3;}
+
+        #image {
+            display:none;
+        }
+    </style>
+    </head>
+    <body onload="ShuffleShells();">
+        <div class="container">
+        <h1>Choose a shell!</h1>
+        <img src="shell.jpg" id="first" alt="first shell" onclick="WinnerMessage();" width="400" height="400">
+        <img src="shell.jpg" id="second" alt="second shell" onclick="TryAgain();" width="400" height="400">
+        <img src="shell.jpg" id="third" alt="third shell" onclick="TryAgain();" width="400" height="400">
+        </div>
+        <div id="messages"></div>
+        <div id="images"></div>
+        <img src="turtle.jpg" id="image">
+    </body>
+</html>
