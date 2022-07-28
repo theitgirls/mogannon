@@ -28,7 +28,11 @@ p {
     width:50%;
     margin:0 auto;
 }
-nav {background-color: #483d8b;}
+nav {
+    padding:10px;
+    margin-bottom:30px;
+    background-color: #483d8b;
+}
 nav a {color:white;}
 nav {color:white}
 nav a:hover{background-color: #C27DFF;}
