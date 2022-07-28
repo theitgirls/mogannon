@@ -34,6 +34,7 @@ nav a:hover{background-color: #C27DFF;}
 div {
   border:1px solid white;
   padding: 5px;
+  width:50%;
   border-radius:25px;
   margin:0 auto;
 }
