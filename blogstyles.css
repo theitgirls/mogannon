@@ -15,3 +15,11 @@ h2 {
 p {
     font-family: 'Dosis', sans-serif
 }
+nav {
+    padding:10px;
+    margin-bottom:30px;
+    background-color: #483d8b;
+}
+nav a {color:white;}
+nav {color:white}
+nav a:hover{background-color: #C27DFF;}
