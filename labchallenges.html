@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="labchallengesstyle.css">
     <title>Lab Challenge Page</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
     <script>
       function CatsOff () {
       document.getElementById('mocha1').style.display = 'none';
@@ -19,18 +21,22 @@
       function Mocha1On () {
         document.getElementById('mocha1').style.display = 'block';
         document.getElementById('mocha1info').style.display = 'block';
+        document.getElementById('title').style.display = 'none';
       }
       function Bean1On () {
         document.getElementById('bean1').style.display = 'block';
         document.getElementById('bean1info').style.display = 'block';
+        document.getElementById('title').style.display = 'none';
       }
       function Mocha2On () {
         document.getElementById('mocha2').style.display = 'block';
         document.getElementById('mocha2info').style.display = 'block';
+        document.getElementById('title').style.display = 'none';
       }
       function Bean2On () {
         document.getElementById('bean2').style.display = 'block';
         document.getElementById('bean2info').style.display = 'block';
+        document.getElementById('title').style.display = 'none';
       }
     </script>
 </head>
@@ -39,8 +45,8 @@
     <nav>
         <a href="index.html">Home</a> | <a href="blog.html">BLOG</a> | <a href="labchallenges.html">Lab Challenges</a> <br>
     </nav>
-
-<h1>What is this page for?</h1>
+<h1>Lab Challenges</h1>
+<h2>What is this page for?</h2>
 <p>Glad you asked. This page will include:
     <ul style="list-style-type:circle;">
         <li>Lab Challenge #1: Lists
@@ -53,33 +59,37 @@
 </p>
 <div id="slideshow-container">
   <div id="bigimages">
-      <img src="mocha.jpg" alt="mocha1" id="mocha1">
-      <img src="bean.jpg" alt="bean1" id="bean1">
-      <img src="mocha2.jpg" alt="mocha2" id="mocha2">
-      <img src="beanie2.jpg" alt="bean2" id="bean2">
+      <img src="mocha.jpg" alt="mocha1" id="mocha1" class="center">
+      <img src="bean.jpg" alt="bean1" id="bean1" class="center">
+      <img src="mocha2.jpg" alt="mocha2" id="mocha2" class="center">
+      <img src="beanie2.jpg" alt="bean2" id="bean2" class="center">
   </div>
-  <div id="catinfo">        
-      <h1>Meet My Cats!</h1>
+  <div id="catinfo">
+    <div id="title">
+      <h3>Meet My Cats!</h3>
+      <h3>Click on an icon below to go through the slideshow!</h3>
+    </div>
       <div id="mocha1info">
-          <h2>Mocha</h2>
-          <p>In this photo, we see Mocha with a cute little bow around her neck. She is looking at me curiously, probably wondering why I always take photos of her. This moment was just too cute to not capture!</p>
-      <div id="bean1info">
-          <h2>Bean</h2>
-          <p>This is Mocha's sister, Bean! We call her Beanie most of the time. She's not the smartest cat... but she is definitely the most adorable!</p>
+          <h3>Mocha</h3>
+          <h4>In this photo, we see Mocha with a cute little bow around her neck. She is looking at me curiously, probably wondering why I always take photos of her. This moment was just too cute to not capture!</h4>
+      </div>
+          <div id="bean1info">
+          <h3>Bean</h3>
+          <h4>This is Mocha's sister, Bean! We call her Beanie most of the time. She's not the smartest cat... but she is definitely the most adorable!</h4>
       </div>
       <div id="mocha2info">
-          <h2>Mocha</h2>
-          <p>Here's Mocha again, this time looking a bit more goofy than usual. She typically has a more sophisticated look, but I took a photo from beneath her and it made her look silly.</p>
+          <h3>Mocha</h3>
+          <h4>Here's Mocha again, this time looking a bit more goofy than usual. She typically has a more sophisticated look, but I took a photo from beneath her and it made her look silly.</h4>
       </div>
-      <div id="bean2info">
-          <h2>Bean</h2>
-          <p>This is Beanie again! In this photo, she hopped up onto my lap while I was trying to eat dinner. Obviously, me eating dinner is not okay with her, because she wants attention all the time.</p>
-      </div>
+          <div id="bean2info">
+          <h3>Bean</h3>
+          <h4>This is Beanie again! In this photo, she hopped up onto my lap while I was trying to eat dinner. Obviously, me eating dinner is not okay with her, because she wants attention all the time.</h4>
   </div>
+        </div>
   <div id="thumbnails">
-    <img src="mochathumb.png" alt="mochathumb" id="mochathumb1" onClick="CatsOff(); Mocha1On();" >
-    <img src="beanthumb.png" alt="beanthumb" id="beanthumb1" onClick="CatsOff(); Bean1On();">
-    <img src="mochathumb.png" alt="mochathumb" id="mochathumb2" onClick="CatsOff(); Mocha2On();">
-    <img src="beanthumb.png" alt="beanthumb" id="beanthumb2" onClick="CatsOff(); Bean2On();">
+    <img src="mochathumb.png" style="width:200px;height:200px"; alt="mochathumb" id="mochathumb1" onClick="CatsOff(); Mocha1On();" >
+    <img src="beanthumb.png" style="width:200px;height:200px"; alt="beanthumb" id="beanthumb1" onClick="CatsOff(); Bean1On();">
+    <img src="mochathumb.png" style="width:200px;height:200px"; alt="mochathumb" id="mochathumb2" onClick="CatsOff(); Mocha2On();">
+    <img src="beanthumb.png" style="width:200px;height:200px"; alt="beanthumb" id="beanthumb2" onClick="CatsOff(); Bean2On();">
 </div>
 </body>
