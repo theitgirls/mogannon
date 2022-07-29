@@ -8,19 +8,45 @@ nav {color:white}
 nav a:hover{background-color: #C27DFF;}
 
 body {
-    background-color: plum;
-    color:#ffffff;
+    background-color: #C27DFF;
+    color:#483d8b;
+    font-family: 'Dosis', sans-serif
+}
+h1 {
+    text-align:center;
+    font-size:70px;
+}
+
+h3 {
+    font-size:50px;
+}
+h4 {
+    font-size:30px;
 }
 
 #slideshow-container {
     background-color: #D8B3F9;;
     width: 1200px;
-    margin: auto; /* margin auto is centering this container */        
+    margin: auto; /* margin auto is centering this container */ 
+    border-radius:25px;      
 }
+
 #bigimages {margin-right: 100px;}
 #bigimages img {
-height: 300px;
+height: 500px;
+width:500px;
+border-radius:25px;
+padding-top: 50px;
+padding-right: 30px;
+padding-left: 80px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 #catinfo {padding: 100px;}
 #thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
 /* ^^ margin auto is centering this container */
