@@ -8,9 +8,21 @@ nav {color:white}
 nav a:hover{background-color: #C27DFF;}
 
 body {
-    background-color: #D8B3F9;
+    background-color: plum;
+    color:#ffffff;
 }
 
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+#slideshow-container {
+    background-color: #D8B3F9;;
+    width: 1200px;
+    margin: auto; /* margin auto is centering this container */        
+}
+#bigimages {margin-right: 100px;}
+#bigimages img {
+height: 300px;
+}
+#catinfo {padding: 100px;}
+#thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
+/* ^^ margin auto is centering this container */
+#mochathumb1, #beanthumb1, #mochathumb2, #beanthumb2
+{width: 100px;}
