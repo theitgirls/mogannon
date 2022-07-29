@@ -6,3 +6,7 @@ nav {
 nav a {color:white;}
 nav {color:white}
 nav a:hover{background-color: #C27DFF;}
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
