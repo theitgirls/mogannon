@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Shell Game!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
     <script>
         function WinnerMessage () {
             document.getElementById("messages").innerHTML = 'You found the turtle!';
@@ -31,9 +34,20 @@
         #image {
             display:none;
         }
+        nav a {color: #483d8b;}
+        nav {color: #483d8b;}
+        nav a:hover{background-color: #C27DFF;}
+
+        body {
+            font-family: 'Dosis', sans-serif
+        }
+
     </style>
     </head>
     <body onload="ShuffleShells();">
+        <nav>
+            <a href="index.html">Home</a> | <a href="blog.html">BLOG</a> | <a href="labchallenges.html">Lab Challenges</a> <br>
+        </nav>    
         <div class="container">
         <h1>Choose a shell!</h1>
         <img src="shell.jpg" id="first" alt="first shell" onclick="WinnerMessage();" width="400" height="400">
