@@ -4,8 +4,37 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="labchallengesstyle.css">
     <title>Lab Challenge Page</title>
+
+    <script>
+      function CatsOff () {
+      document.getElementById('mocha1').style.display = 'none';
+      document.getElementById('bean1').style.display = 'none';
+      document.getElementById('mocha2').style.display = 'none';
+      document.getElementById('bean2').style.display = 'none';
+      document.getElementById('mocha1info').style.display = 'none';
+      document.getElementById('bean1info').style.display = 'none';
+      document.getElementById('mocha2info').style.display = 'none';
+      document.getElementById('bean2info').style.display = 'none';
+      }
+      function Mocha1On () {
+        document.getElementById('mocha1').style.display = 'block';
+        document.getElementById('mocha1info').style.display = 'block';
+      }
+      function Bean1On () {
+        document.getElementById('bean1').style.display = 'block';
+        document.getElementById('bean1info').style.display = 'block';
+      }
+      function Mocha2On () {
+        document.getElementById('mocha2').style.display = 'block';
+        document.getElementById('mocha2info').style.display = 'block';
+      }
+      function Bean2On () {
+        document.getElementById('bean2').style.display = 'block';
+        document.getElementById('bean2info').style.display = 'block';
+      }
+    </script>
 </head>
-<body>
+<body onLoad="CatsOff();">
 
     <nav>
         <a href="index.html">Home</a> | <a href="blog.html">BLOG</a> | <a href="labchallenges.html">Lab Challenges</a> <br>
@@ -22,51 +51,35 @@
     <a href="shellgame.html">Check out my version of the Shell Game!</a>
     2022 &#169;
 </p>
-  
-<div class="w3-container">
-  <h2>Slideshow Indicators</h2>
-  <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
-</div>
-
-<div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="bean.jpg" style="width:100%">
-  <img class="mySlides" src="mocha.jpg" style="width:100%">
-  <img class="mySlides" src="beanie2.jpg" style="width:100%">
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+<div id="slideshow-container">
+  <div id="bigimages">
+      <img src="mocha.jpg" alt="mocha1" id="mocha1">
+      <img src="bean.jpg" alt="bean1" id="bean1">
+      <img src="mocha2.jpg" alt="mocha2" id="mocha2">
+      <img src="beanie2.jpg" alt="bean2" id="bean2">
   </div>
+  <div id="catinfo">        
+      <h1>Meet My Cats!</h1>
+      <div id="mocha1info">
+          <h2>Mocha</h2>
+          <p>In this photo, we see Mocha with a cute little bow around her neck. She is looking at me curiously, probably wondering why I always take photos of her. This moment was just too cute to not capture!</p>
+      <div id="bean1info">
+          <h2>Bean</h2>
+          <p>This is Mocha's sister, Bean! We call her Beanie most of the time. She's not the smartest cat... but she is definitely the most adorable!</p>
+      </div>
+      <div id="mocha2info">
+          <h2>Mocha</h2>
+          <p>Here's Mocha again, this time looking a bit more goofy than usual. She typically has a more sophisticated look, but I took a photo from beneath her and it made her look silly.</p>
+      </div>
+      <div id="bean2info">
+          <h2>Bean</h2>
+          <p>This is Beanie again! In this photo, she hopped up onto my lap while I was trying to eat dinner. Obviously, me eating dinner is not okay with her, because she wants attention all the time.</p>
+      </div>
+  </div>
+  <div id="thumbnails">
+    <img src="mochathumb.png" alt="mochathumb" id="mochathumb1" onClick="CatsOff(); Mocha1On();" >
+    <img src="beanthumb.png" alt="beanthumb" id="beanthumb1" onClick="CatsOff(); Bean1On();">
+    <img src="mochathumb.png" alt="mochathumb" id="mochathumb2" onClick="CatsOff(); Mocha2On();">
+    <img src="beanthumb.png" alt="beanthumb" id="beanthumb2" onClick="CatsOff(); Bean2On();">
 </div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
 </body>
