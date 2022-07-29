@@ -1,16 +1,17 @@
 body {
     background-color: #D8B3F9;
+    font-family: 'Dosis', sans-serif
 }
 h1 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    text-align:center;
     color:#483d8b;
+    text-align:center;
+    font-size: 40px;
+    font-family:'Dosis', sans-serif
 }
 h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 35px;
     color:white;
+    font-size: 35px;
+    font-family:'Dosis', sans-serif
 }   
 p {
     font-family: 'Dosis', sans-serif
